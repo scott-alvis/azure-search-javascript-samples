@@ -13,8 +13,8 @@ const axios = require('axios');
 const Papa = require('papaparse')
 const { SearchClient, SearchIndexClient, AzureKeyCredential } = require("@azure/search-documents");
 
-const SEARCH_ENDPOINT = "https://YOUR-SEARCH-RESOURCE-NAME.search.windows.net";
-const SEARCH_KEY = "YOUR-SEARCH-ADMIN-KEY";
+const SEARCH_ENDPOINT = "https://basic-search-demo.search.windows.net";
+const SEARCH_KEY = "049FAAACE29DE2F978E958FDB2B75E38";
 
 const SEARCH_INDEX_NAME = "good-books";
 const SEARCH_INDEX_SCHEMA = require("./good-books-index.json");
