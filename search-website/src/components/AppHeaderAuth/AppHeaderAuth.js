@@ -20,7 +20,7 @@ export default function AppHeaderAuth() {
         userDetails     = (clientPrincipal && clientPrincipal.userDetails) || null;
 
     if (userDetails) {
-      html = `${userDetails} | <a href="/logout" class="auth-link">Sign Out</a>`;
+      html = `${userDetails} | <a href="/logout" class="auth-link"></a>`;
     }
 
     authElement.innerHTML = html;
