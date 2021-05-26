@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import withStyles from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import LinearProgress  from '@material-ui/core/LinearProgress';
 import { useLocation, useHistory } from "react-router-dom";
 
