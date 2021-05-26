@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
-import Rating from '@material-ui/lab/Rating';
 import { withStyles } from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import axios from 'axios';
@@ -50,8 +49,6 @@ export default function Details() {
           <h5 className="card-title">{document.title}</h5>
           <img className="image" src={document.image_link} alt="Book cover"></img>
           <p className="card-desc" dangerouslySetInnerHTML={{ __html: document.description }} />
-          <Rating name="half-rating-read" value={parseInt(document.average_rating)} precision={0.1} readOnly></Rating>
-          <p className="card-text">{document.ratings_count} Ratings</p>
         </div>
       );
     }
