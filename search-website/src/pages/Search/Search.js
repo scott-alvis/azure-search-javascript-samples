@@ -71,7 +71,7 @@ export default function Search() {
   if (isLoading) {
     body = (
       <div className="col-md-9">
-        <LinearProgress />
+        <LinearProgress color="secondary" />
       </div>);
   } else {
     body = (
