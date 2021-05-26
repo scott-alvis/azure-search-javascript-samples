@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import withStyles from '@material-ui/core/styles';
 import LinearProgress  from '@material-ui/core/LinearProgress';
 import { useLocation, useHistory } from "react-router-dom";
 
@@ -61,6 +62,10 @@ export default function Search() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [q]);
 
+  const StyledLinearProgress = withStyles({
+    colorPrimary: { background: "#ddd"},
+    barColorPrimary: { background: "#aaa" }
+  })(LinearProgress);
 
   let postSearchHandler = (searchTerm) => {
     //console.log(searchTerm);
@@ -71,7 +76,7 @@ export default function Search() {
   if (isLoading) {
     body = (
       <div className="col-md-9">
-        <LinearProgress color="secondary" />
+        <StyledLinearProgress />
       </div>);
   } else {
     body = (

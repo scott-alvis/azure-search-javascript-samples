@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 import Rating from '@material-ui/lab/Rating';
+import withStyles from '@material-ui/core/styles';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import axios from 'axios';
 
@@ -30,8 +31,13 @@ export default function Details() {
 
   }, [id]);
 
+  const StyledLinearProgress = withStyles({
+    colorPrimary: { background: "#ddd"},
+    barColorPrimary: { background: "#aaa" }
+  })(LinearProgress);
+
   // View default is loading with no active tab
-  let detailsBody = (<LinearProgress color="secondary" />),
+  let detailsBody = (<StyledLinearProgress />),
       resultStyle = "nav-link",
       rawStyle    = "nav-link";
 
