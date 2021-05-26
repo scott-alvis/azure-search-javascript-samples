@@ -44,7 +44,6 @@ export default function Details() {
           <h5 className="card-title">{document.title}</h5>
           <img className="image" src={document.image_link} alt="Book cover"></img>
           <p className="card-desc" dangerouslySetInnerHTML={{ __html: document.description }} />
-          <p className="card-text">{document.authors?.join('; ')} - {document.original_publication_year}</p>
           <Rating name="half-rating-read" value={parseInt(document.average_rating)} precision={0.1} readOnly></Rating>
           <p className="card-text">{document.ratings_count} Ratings</p>
         </div>
