@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import CircularProgress  from '@material-ui/core/CircularProgress';
+import LinearProgress  from '@material-ui/core/LinearProgress';
 import { useLocation, useHistory } from "react-router-dom";
 
 import Results from '../../components/Results/Results';
@@ -71,7 +71,7 @@ export default function Search() {
   if (isLoading) {
     body = (
       <div className="col-md-9">
-        <CircularProgress />
+        <LinearProgress />
       </div>);
   } else {
     body = (
