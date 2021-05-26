@@ -17,6 +17,7 @@ export default function CheckboxFacet(props) {
             <FacetValueListItem dense disableGutters id={facetValue.value}>
                 <Checkbox 
                     edge="start" 
+                    color="default"
                     disableRipple 
                     checked={isSelected}
                     onClick= {
