@@ -31,7 +31,7 @@ export default function Details() {
   }, [id]);
 
   // View default is loading with no active tab
-  let detailsBody = (<LinearProgress />),
+  let detailsBody = (<LinearProgress color="secondary" />),
       resultStyle = "nav-link",
       rawStyle    = "nav-link";
 
