@@ -11,3 +11,7 @@
     text-align: left;
     padding: 50px;
 }
+
+.MuiLinearProgress-barColorPrimary {
+    background-color: #90caf9;
+  }
